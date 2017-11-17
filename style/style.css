@@ -113,8 +113,6 @@ hr {
     color: #0eedc7;
     font-size: 5em;
     text-align: center;
-    clear: both;
-
   }
 
   .logo-hero h2 {
@@ -122,8 +120,6 @@ hr {
     color: #0eedc7;
     font-size: 5em;
     text-align: center;
-    clear: both;
-
   }
 
   .landing-description {
@@ -179,7 +175,7 @@ hr {
 }
 
 .content-about {
-  margin-top: 20vh;
+  padding-top: 20vh;
 }
 
 .about-page img{
@@ -210,28 +206,11 @@ hr {
 /* third part */
 
 .services-page{
-  max-width: 950px;
-  height: 600px;
-  padding: 15px 5px 15px 5px;
+  max-width: 90vw;
+  height: 700px;
+  padding: 10px 5px 10px 5px;
   position: relative;
   left: 7%;
-}
-
-.serviceone, .servicetwo, .servicethree {
-  max-width: 30%;
-  margin: 0 1%;
-  position: relative;
-  display: inline-block;
-}
-
-.services-content img {
-  max-width: 80px;
-  border-radius: 100%;
-}
-
-.services-content img, h4, p{
-  margin-top: 10px;
-  padding: 5px;
 }
 
 #servicetittle {
@@ -243,6 +222,56 @@ hr {
   position: relative;
   left: -20%;
 }
+
+
+.serviceone, .servicetwo, .servicethree {
+  max-width: 33.3%;
+  padding: 0 1.5%;
+  float: left;
+  height: 400px;
+}
+
+#serviceonepic {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 190px;
+
+}
+
+#serviceonepic img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#textorebelde {
+  position: absolute;
+  top: 80%;
+  left: 0px;
+  font-size: 30px;
+
+}
+
+.serviceone p {
+  padding-top: 20px;
+  float: left;
+  clear: both;
+  text-align: center;
+}
+
+/*.services-content img {
+  max-width: 80px;
+  border-radius: 100%;
+}*/
+
+.servicetwo, .servicethree img, h4, p{
+  padding: 10px 5px;
+}
+
+
 
 
 /* fourth part */
@@ -262,7 +291,7 @@ hr {
   /*background-color: yellow;*/
 }
 
-figure{
+.gallery figure{
   width: 33.3%;
   height: 200px;
   background-color: grey;
