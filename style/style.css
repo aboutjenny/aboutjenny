@@ -149,6 +149,7 @@ hr {
     transform: translate(-50%, -50%);
   }
 
+
 .navline {
   width:100%;
   height: 60px;
@@ -168,15 +169,15 @@ hr {
 
 .about-page{
   max-width: 900px;
-  height: 600px;
-  padding: 20px 10px 20px 5px;
+  height: 500px;
+  padding: 20px;
   position: relative;
   left: 12%;
 }
 
-.content-about {
-  padding-top: 20vh;
-}
+/*.content-about {
+  padding-top: 10vh;
+}*/
 
 .about-page img{
   max-height:280px;
@@ -207,7 +208,7 @@ hr {
 
 .services-page{
   max-width: 90vw;
-  height: 700px;
+  height: 650px;
   padding: 10px 5px 10px 5px;
   position: relative;
   left: 7%;
@@ -215,7 +216,8 @@ hr {
 
 #servicetittle {
   max-width: 300px;
-  margin: 10px 10px 50px 10px;
+  height: 150px;
+  padding: 10px 10px 50px 10px;
 }
 
 #servicetittle hr {
@@ -225,56 +227,150 @@ hr {
 
 
 .serviceone, .servicetwo, .servicethree {
-  max-width: 33.3%;
-  padding: 0 1.5%;
+  max-width: 32.5%;
+  padding: 0 2%;
   float: left;
   height: 400px;
 }
 
-#serviceonepic {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 190px;
-  height: 190px;
+/*service one start*/
 
-}
+  #serviceonepic {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 190px;
+    height: 190px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 
-#serviceonepic img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  }
 
-#textorebelde {
-  position: absolute;
-  top: 80%;
-  left: 0px;
-  font-size: 30px;
+  #serviceonepic img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-}
+  #serviceonetext {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    font-size: 30px;
 
-.serviceone p {
-  padding-top: 20px;
-  float: left;
-  clear: both;
-  text-align: center;
-}
+  }
 
-/*.services-content img {
-  max-width: 80px;
-  border-radius: 100%;
-}*/
+  .serviceone p {
+    padding-top: 20px;
+    float: left;
+    clear: both;
+    text-align: center;
+  }
 
-.servicetwo, .servicethree img, h4, p{
+/*service one end*/
+
+
+/*service two start*/
+
+  #servicetwopic {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 190px;
+    height: 190px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+  }
+
+  #servicetwopic img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #servicetwotext {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    font-size: 30px;
+
+  }
+
+  .servicetwo p {
+    padding-top: 20px;
+    float: left;
+    clear: both;
+    text-align: center;
+  }
+
+/*service two end*/
+
+/*service three start*/
+
+  #servicethreepic {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 190px;
+    height: 190px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+  }
+
+  #servicethreepic img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #servicethreetext {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    font-size: 30px;
+
+  }
+
+  .servicethree p {
+    padding-top: 20px;
+    float: left;
+    clear: both;
+    text-align: center;
+  }
+
+/*service three end*/
+
+
+
+/*.servicetwo, .servicethree img, h4, p{
   padding: 10px 5px;
-}
+}*/
 
 
 
 
 /* fourth part */
+.porfolio-page {
+  display: block;
+  float: left;
+  clear: both;
+}
+
+.portfolio-page {
+  overflow:auto;
+  min-height: 500px;
+  width: auto;
+  /*max-width: 99vw;*/
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  clear: both;
+}
 
 #portfoliotittle {
   max-width: 100px;
@@ -283,19 +379,77 @@ hr {
   left: 18%;
 }
 
-.gallery {
-  padding: 10px;
-  left: 50%;
-  position: relative;
-  transform: translate(-50%, -50%);
-  /*background-color: yellow;*/
+.gallery div{
+  width: 33.3%;
+  height: 250px;
+  float: left;
+  padding: 2px;
+  overflow: auto;
 }
 
-.gallery figure{
-  width: 33.3%;
-  height: 200px;
-  background-color: grey;
-  float: left;
-  padding: 1px;
-  overflow: auto;
+
+#port1 {
+  padding: 10px;
+  background-image: url('../images/portfolio/nuttylove1.png');
+  background-size: cover;
+  position: relative;
+}
+
+  /*NOT WORKING!!!!*/
+
+  #port1:hover {
+    background-color: #008CBA;
+  }
+  /*NOT WORKING!!!!*/
+
+
+  #port2 {
+    padding: 10px;
+    background-image: url('../images/portfolio/smartmag1.jpg');
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  #port3 {
+    padding: 10px;
+    background-image: url('../images/portfolio/vhalar1.png');
+    background-size: cover;
+  }
+
+
+  #port4 {
+    padding: 10px;
+    /*background-image: url('../images/portfolio/smartmag1.jpg');
+    background-size: cover;
+    background-position: 50%;*/
+
+  }
+
+  #port5 {
+    padding: 10px;
+    background-image: url('../images/portfolio/vhalar1.png');
+    background-size: cover;
+  }
+
+  #port6 {
+    padding: 10px;
+    background-image: url('../images/portfolio/nuttylove1.png');
+    background-size: cover;
+    position: relative;
+  }
+
+  /* fith part */
+
+  .contact-page {
+  height: 100vh;
+  min-height: 450px;
+  padding: 20px;
+
+
+}
+
+.contacttittle {
+  max-width: 300px;
+  height: 150px;
+  background-color: yellow;
 }
