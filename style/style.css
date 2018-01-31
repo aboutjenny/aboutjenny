@@ -13,7 +13,7 @@ Grey: #2d2d2d
 
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 17px;
   line-height: 1.5;
   color: #002c59
@@ -55,6 +55,75 @@ hr {
 
 /* first part */
 
+/*NAV START  HERE*/
+
+
+/* burger menu */
+
+.hero-landing li{
+  display:none;
+}
+
+#burger-menu-container{
+  display:none;
+}
+
+/*
+#burger-menu-container{
+  display:block;
+  position: absolute;
+  right: 35px;
+  top:35px;
+  height: 30px;
+  width: 25px;
+
+
+.burger-menu-piece {
+  width: 100%;
+  height:3px;
+  margin: 3px 0;
+  background: #0eedc7;
+  border-radius: 0.5
+}*/
+
+/* burger menu end */
+
+#navbar {
+  width:100%;
+  height: 60px;
+  color: #0eedc7;
+  font-size: 28px;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  margin-bottom: 10px;
+  z-index: 1;
+  transition: top 0.5s;
+  }
+
+#navbar li {
+    display: inline-block;
+    padding: 0px 30px;
+
+}
+
+#navbar a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #0eedc7;
+  font-weight: 400;
+}
+
+
+/*END OF NAV*/
+
   .landing-page{
     background-image: url('../images/bg-landing.png');
     background-size: cover;
@@ -62,6 +131,10 @@ hr {
     min-height: 450px;
     min-width: 100%;
     position: relative;
+    background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
   }
 
   .hero-landing{
@@ -76,31 +149,6 @@ hr {
     transform: translate(-50%, -50%);
 
   }
-
-  /* burger menu */
-
-  .hero-landing li{
-    display:none;
-  }
-
-  #burger-menu-container{
-    display:block;
-    position: absolute;
-    right: 35px;
-    top:35px;
-    height: 30px;
-    width: 25px;
-  }
-
-  .burger-menu-piece {
-    width: 100%;
-    height:3px;
-    margin: 3px 0;
-    background: #0eedc7;
-    border-radius: 0.5
-  }
-
-  /* burger menu end */
 
   .logo-hero {
     position: absolute;
@@ -150,54 +198,52 @@ hr {
   }
 
 
-.navline {
-  width:100%;
-  height: 60px;
-  color: #0eedc7;
-  font-size: 28px;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-  /*position: fixed;
-  top: 0;*/
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-color: white;
-  margin-bottom: 10px;
-}
+
 /* second part */
 
 .about-page{
-  max-width: 900px;
-  height: 500px;
-  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  padding: 5vw;
+  padding-top: 80px;
   position: relative;
-  left: 12%;
+
 }
 
-/*.content-about {
-  padding-top: 10vh;
-}*/
+.content-about {
+  height: 85vh;
+  width: 85vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
 
-.about-page img{
-  max-height:280px;
-  display: inline;
+}
+
+#pictureabout{
   float: left;
-  margin-right: 30px;
+  height: 100%;
+  width: 48%;
+  display: inline;
+
 }
 
-.about-page hr {
+#pictureabout img{
+  max-height:280px;
+}
+
+
+#textabout{
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+
+#textabout hr {
   position: relative;
-  left: -20%;
+  left: -35%;
 }
 
-/*.about-page h3 {
-  font-size: 20px;
-  color: #002c59;
-  font-weight: 700;
-}*/
-
-.about-page p{
+#textabout p{
   position: relative;
   left: 10px;
   padding-top: 20px;
@@ -207,6 +253,7 @@ hr {
 /* third part */
 
 .services-page{
+  background-color: black;
   max-width: 90vw;
   height: 650px;
   padding: 10px 5px 10px 5px;
@@ -440,16 +487,77 @@ hr {
 
   /* fith part */
 
-  .contact-page {
+.contact-page {
   height: 100vh;
   min-height: 450px;
-  padding: 20px;
+  padding-top: 20px;
+  width: 100vw;
 
+}
+
+.minihero {
+  background-color: #F5F8FB;
+  height: 300px;
+  width: 100vw;
+  padding: 10%;
+
+}
+
+.minihero h3{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: lighter;
+  /*color: #0eedc7;*/
+  color: #002c59;
+  font-size: 30px;
 
 }
 
 .contacttittle {
+  padding: 30px;
+  padding-top: 60px;
   max-width: 300px;
   height: 150px;
-  background-color: yellow;
+}
+
+.contactcontent {
+  width: 100vw;
+  height: 500px;
+}
+
+.contactinfo {
+  width: 35%;
+  padding: 30px;
+  float: left;
+}
+
+.contactform {
+  width: 65%;
+  padding: 30px;
+  float: left;
+}
+
+form {
+  padding: 10px;
+}
+
+input {
+  width: 60vw;
+  height: 20px;
+
+}
+
+label {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #002c59;
+}
+
+.coment {
+  height: 300px;
+
 }

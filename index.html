@@ -5,45 +5,62 @@
     <title>about Jenny</title>
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:200,300,400,700,900" rel="stylesheet">
   </head>
 
 <!-- content -->
 
   <body>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <!-- navigation -->
+
+      <!-- burger menu -->
+    <div onclick="toggleNavigation()" id="burger-menu-container">
+        <div class="burger-menu-piece">
+        </div>
+        <div class="burger-menu-piece">
+        </div>
+        <div class="burger-menu-piece">
+        </div>
+
+        <nav class="burger-menu">
+            <ul class="site-nav">
+              <li> <a href="#">About</a> </li>
+              <li> <a href="#">Services</a> </li>
+              <li> <a href="#">Portfolio</a> </li>
+              <li> <a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+      <!-- horizontal nav bar -->
+
+    <nav id="navbar">
+        <ul class="site-nav">
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Services</a> </li>
+          <li> <h2>&lt;ABOUT JENNY/&gt;</h2> </li>
+          <li> <a href="#">Portfolio</a> </li>
+          <li> <a href="#">Contact</a> </li>
+        </ul>
+    </nav>
+
+    <!-- end of nav -->
 
     <!-- first page -->
     <main class="landing-page">
 
         <section class="hero-landing">
 
-          <nav>
-              <ul>
-                <li>
-                    <a href="#">Services</a>
-                    <a href="#">Portfolio</a>
-                    <p class="nav-logo">About Jenny</p>
-                    <a href="#">Contact</a>
-                </li>
-              </ul>
-              <div id="burger-menu-container">
-                  <div class="burger-menu-piece">
-                  </div>
-                  <div class="burger-menu-piece">
-                  </div>
-                  <div class="burger-menu-piece">
-                  </div>
-              </div>
-          </nav>
 
-          <div class=logo-hero>
+
+          <div class="logo-hero">
             <h1> &lt;ABOUT</h1>
             <h2> JENNY/&gt;</h2>
           </div>
 
-          <div class=landing-description>
+          <div class="landing-description">
             <hr>
             <p> Hello! My name is Jenny and I design responsive websites </p>
             <img src="images/arrow1.png" alt="arrow1">
@@ -53,22 +70,18 @@
 
     </main>
 
-
-    <!-- nav -->
-
-    <nav class="navline">
-      <h2>&lt;ABOUT JENNY/&gt;</h2>
-    </nav>
-
     <!-- second page -->
     <section class="about-page">
 
       <div class="content-about">
-        <img src="images/bg-landing.png" alt="perfil">
-        <h3>about aboutJenny</h3>
-        <hr>
-        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
-
+        <div id="pictureabout">
+          <img src="images/bg-landing.png" alt="perfil">
+        </div>
+        <div id="textabout">
+          <h3>about aboutJenny</h3>
+          <hr>
+          <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+        </div>
       </div>
 
     </section>
@@ -103,7 +116,7 @@
         <div class="servicethree">
           <div id="servicethreepic">
             <img src="images/arrow1.png" alt="arrow1">
-            <h4 id=servicethreetext>SERVICE </h4>
+            <h4 id="servicethreetext">SERVICE </h4>
           </div>
           <p>The sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. </p>
         </div>
@@ -143,16 +156,47 @@
 
     <!-- fith page -->
     <section class="contact-page">
+        <div class="minihero">
+          <h3>Insert here a nice quote to make clients </h3>
+            <h3>smash that contact botton, woho!</h3>
+        </div>
 
       <div class="contacttittle">
-        <h3>contact</h3>
+        <h3>contact me!</h3>
         <hr>
       </div>
+
+      <div class="contactcontent">
+        <div class="contactinfo">
+          <h3>Here some text</h3>
+          <p>And here some more information about how to contact me, time and bla bla bla</p>
+          <p>You can always drop me an email on hello@aboutjenny.com</p>
+        </div>
+
+        <div class="contactform">
+          <h3>Let's get this personal</h3>
+          <form class="Contact" action="index.html" method="post">
+              <label for="Name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name...">
+              <label for="Email">Email</label>
+              <input type="email" id="email" name="email">
+              <label for="Website">Website</label>
+              <input type="text" id="website" name="website">
+              <label for="Coments">Coments</label>
+              <input type="text" id="coment" name="coment">
+          </form>
+
+        </div>
+
+      </div>
+
 
       <button type="contact" name="buttontest"> Hola</button>
 
     </section>
 
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
   </body>
 
