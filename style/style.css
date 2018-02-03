@@ -202,10 +202,10 @@ hr {
 /* second part */
 
 .about-page{
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   padding: 5vw;
-  padding-top: 80px;
+  padding-top: 90px;
   position: relative;
 
 }
@@ -253,12 +253,10 @@ hr {
 /* third part */
 
 .services-page{
-  background-color: black;
-  max-width: 90vw;
-  height: 650px;
-  padding: 10px 5px 10px 5px;
+  height: 90vh;
+  width: 100vw;
+  padding: 5vw;
   position: relative;
-  left: 7%;
 }
 
 #servicetittle {
@@ -284,72 +282,57 @@ hr {
 
   #serviceonepic {
     position: relative;
-    top: 0;
-    left: 50%;
     width: 190px;
-    height: 190px;
+    height: 210px;
     left: 50%;
     transform: translate(-50%, 0%);
-
   }
 
   #serviceonepic img {
     width: 90%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
   }
 
   #serviceonetext {
     position: absolute;
-    top: 80%;
-    left: 0px;
+    top: 70%;
     font-size: 30px;
-
   }
 
   .serviceone p {
     padding-top: 20px;
-    float: left;
-    clear: both;
     text-align: center;
   }
 
 /*service one end*/
 
-
 /*service two start*/
 
   #servicetwopic {
     position: relative;
-    top: 0;
-    left: 50%;
     width: 190px;
-    height: 190px;
+    height: 210px;
     left: 50%;
     transform: translate(-50%, 0%);
-
   }
 
   #servicetwopic img {
     width: 90%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
   }
 
   #servicetwotext {
     position: absolute;
-    top: 80%;
-    left: 0px;
+    top: 75%;
     font-size: 30px;
-
   }
 
   .servicetwo p {
     padding-top: 20px;
-    float: left;
-    clear: both;
     text-align: center;
   }
 
@@ -359,47 +342,31 @@ hr {
 
   #servicethreepic {
     position: relative;
-    top: 0;
-    left: 50%;
     width: 190px;
-    height: 190px;
+    height: 210px;
     left: 50%;
     transform: translate(-50%, 0%);
-
   }
 
   #servicethreepic img {
     width: 90%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
   }
 
   #servicethreetext {
     position: absolute;
-    top: 80%;
-    left: 0px;
+    top: 75%;
     font-size: 30px;
-
   }
 
   .servicethree p {
     padding-top: 20px;
-    float: left;
-    clear: both;
     text-align: center;
   }
 
 /*service three end*/
-
-
-
-/*.servicetwo, .servicethree img, h4, p{
-  padding: 10px 5px;
-}*/
-
-
-
 
 /* fourth part */
 .porfolio-page {
@@ -412,7 +379,6 @@ hr {
   overflow:auto;
   min-height: 500px;
   width: auto;
-  /*max-width: 99vw;*/
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -434,6 +400,16 @@ hr {
   overflow: auto;
 }
 
+.PortContainer{
+  padding: 5em 1.5em;
+  background-color: #0D1428;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: white;
+  }
 
 #port1 {
   padding: 10px;
@@ -442,12 +418,10 @@ hr {
   position: relative;
 }
 
-  /*NOT WORKING!!!!*/
+#port1:hover .PortContainer {
+  opacity: 0.8;
 
-  #port1:hover {
-    background-color: #008CBA;
-  }
-  /*NOT WORKING!!!!*/
+}
 
 
   #port2 {
