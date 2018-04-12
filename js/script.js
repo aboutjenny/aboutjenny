@@ -26,10 +26,12 @@ function scrollFunction() {
   }
 };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 300) {
-    document.getElementById("mobilenavbar").style.top = "0";
-  } else {
-    document.getElementById("mobilenavbar").style.top = "-70px";
-  }
-};
+// window.onscroll = function() {scrollFunction2()};
+//
+// function scrollFunction2() {
+//   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 300) {
+//     document.getElementById("mobilenavbar").style.top = "0";
+//   } else {
+//     document.getElementById("mobilenavbar").style.top = "-70px";
+//   }
+// };
