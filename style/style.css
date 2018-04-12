@@ -60,6 +60,8 @@ hr {
   border-color: #0eedc7;
 }
 
+ @media only screen and (max-width : 1200px) {
+
 /* first part */
 
 /*NAV START  HERE*/
@@ -616,13 +618,66 @@ label {
   transition: all 0.4s ease;
 }
 
+}
+
 /* MOBILE DESIGN*/
 
- @media screem (max-width: 599px) {
+  @media only screen and (max-width : 414px)  {
 
-.landing-page {
+
+/* NAVIGATION */
+
+#navbar {
   display:none;
 }
 
+/* burger menu starts */
+
+#mobilenavbar {
+  width:100%;
+  height: 60px;
+  color: #0eedc7;
+  font-size: 28px;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  top: -70px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  z-index: 1;
+  transition: top 0.5s;
+  margin-bottom: 5px;
+  }
+
+#burger-menu-container{
+  display: block;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top:5px;
+  left: 95%;
+  transform: translate(-50%, -0%);
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu-piece {
+  width: 100%;
+  height:4px;
+  margin: 4px 0;
+  background: #0eedc7;
+  border-radius: 4px;
+}
+
+/* burger menu end */
+
+.landing-page {
+  max-height: 80vh;
+}
 
  }
