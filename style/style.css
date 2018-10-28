@@ -34,7 +34,7 @@ h2 {
 
 h3 {
 font-family: "Roboto Condensed", "helvetiva", sans-serif;
-font-size: 23px;
+font-size: 30px;
 color: #002c59;
 font-weight: 700;
 }
@@ -216,39 +216,42 @@ hr {
 .about-page{
   height: 85vh;
   width: 100vw;
-  max-width: 100%;
-  padding: 5vw;
-  padding-top: 90px;
   position: relative;
-
 }
 
 .content-about {
-  height: 85vh;
-  width: 85vw;
+  height: 90%;
+  width: 90%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
 
 }
 
 #pictureabout{
   float: left;
+  width: 50%;
   height: 100%;
-  width: 48%;
   display: inline;
-
+  padding: 10px;
 }
 
 #pictureabout img{
-  max-height:280px;
+  max-height: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-
 #textabout{
-  float: right;
+  float: left;
   height: 100%;
   width: 50%;
+  display: inline;
+  padding: 90px 5px 5px 5px;
 }
 
 #textabout hr {
