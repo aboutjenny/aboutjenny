@@ -392,20 +392,16 @@ hr {
 /*service three end*/
 
 /* fourth part */
-.porfolio-page {
-  display: block;
-  float: left;
-  clear: both;
-}
 
 .portfolio-page {
-  overflow:auto;
-  min-height: 500px;
   width: auto;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
+  height: 85vh;
+  min-height: 630px;
   clear: both;
+  overflow: auto;
 }
 
 #portfoliotittle {
@@ -458,21 +454,23 @@ hr {
 #port1 {
   background-image: url('../images/portfolio/nuttylove1.png');
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 
 
   #port2 {
     padding: 10px;
-    background-image: url('../images/portfolio/smartmag1.jpg');
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png');
     background-size: cover;
-    background-position: 50%;
+
   }
 
   #port3 {
     padding: 10px;
     background-image: url('../images/portfolio/vhalar1.png');
     background-size: cover;
+    background-position: center;
   }
 
 
@@ -481,61 +479,60 @@ hr {
     background-image: url('../images/portfolio/smartmag1.jpg');
     background-size: cover;
     background-position: 50%;
+    background-position: center;
   }
 
   #port5 {
     padding: 10px;
     background-image: url('../images/portfolio/vhalar1.png');
     background-size: cover;
+    background-position: center;
   }
 
   #port6 {
     padding: 10px;
     background-image: url('../images/portfolio/nuttylove1.png');
     background-size: cover;
-    position: relative;
+    background-position: center;
   }
 
   /* fith part */
 
 .contact-page {
-  height: 100vh;
-  min-height: 450px;
-  padding-top: 20px;
+  height: 100%;
   width: 100vw;
-  max-width: 100%;
+  position: relative;
 }
 
 .minihero {
   background-color: #F5F8FB;
   height: 300px;
   width: 100vw;
-  max-width: 100%;
-  padding: 10%;
 }
 
 .minihero h3{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
   font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: lighter;
   color: #002c59;
   font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 9px;
 }
 
-.contacttittle {
-  padding: 30px;
-  padding-top: 60px;
-  max-width: 300px;
-  height: 150px;
-}
 
 .contactcontent {
   width: 100vw;
-  max-width: 100%;
-  height: 400px;
+  min-height: 550px;
+  padding: 5%;
+}
+
+.contactcontent hr{
+  position: relative;
+  left: -30%;
 }
 
 .contactinfo {
@@ -577,8 +574,8 @@ input:focus {
 }
 
 label {
-  margin: 5px;
   font-size: 18px;
+  line-height: 28px;
   font-family: "Roboto";
   font-weight: 400;
   color: #002c59;
@@ -603,7 +600,7 @@ label {
 
 .coment:focus {
     border-bottom: 2px solid #002c59;
-    height: 100px;
+    height: 80px;
 }
 
 .SubmitButton {
@@ -619,11 +616,25 @@ label {
   position: relative;
   transform: translate(-50%, 0%);
   left: 87%;
+  background-color: white;
 }
 
 .SubmitButton:hover {
   background-color: #0eedc7;
   transition: all 0.4s ease;
+}
+
+footer {
+  height: 50px;
+  background-color: #F5F8FB;
+}
+footer p  {
+  font-size: 9pt;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 
