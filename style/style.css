@@ -463,6 +463,8 @@ hr {
     padding: 10px;
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png');
     background-size: cover;
+    background-position: center;
+    position: relative;
 
   }
 
