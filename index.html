@@ -9,36 +9,33 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:200,300,400,700,900" rel="stylesheet">
   </head>
 
-<!-- content -->
-
   <body>
 
 
     <!-- navigation -->
 
       <!-- burger menu -->
-    <div id="mobilenavbar">
 
-      <h3>AboutJenny</h3>
+      <div id="mobilenavbar">
+          <div onclick="toggleNavigation()" id="burger-menu-container">
+              <div class="burger-menu-piece">
+              </div>
+              <div class="burger-menu-piece">
+              </div>
+              <div class="burger-menu-piece">
+              </div>
 
-      <div onclick="toggleNavigation()" id="burger-menu-container">
-          <div class="burger-menu-piece">
+                <nav class="burger-menu">
+                    <ul class="site-nav">
+                      <li> <a href="#">About</a> </li>
+                      <li> <a href="#">Services</a> </li>
+                      <li> <a href="#">Portfolio</a> </li>
+                      <li> <a href="#">Contact</a> </li>
+                    </ul>
+                </nav>
           </div>
-          <div class="burger-menu-piece">
-          </div>
-          <div class="burger-menu-piece">
-          </div>
-
-          <nav class="burger-menu">
-              <ul class="site-nav">
-                <li> <a href="#">About</a> </li>
-                <li> <a href="#">Services</a> </li>
-                <li> <a href="#">Portfolio</a> </li>
-                <li> <a href="#">Contact</a> </li>
-              </ul>
-          </nav>
       </div>
-    </div>
+
 
       <!-- horizontal nav bar -->
 

@@ -1,10 +1,4 @@
-/*
-$(document).ready(function() {
-});
-*/
-// ^ ignore the document ready function for now
-
-console.log(jQuery === $);
+// console.log(jQuery === $);
 
 function toggleNavigation() {
   // $("selector").action("arguments");
@@ -25,6 +19,8 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-60px";
   }
 };
+
+
 
 // window.onscroll = function() {scrollFunction2()};
 //
