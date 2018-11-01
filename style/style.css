@@ -91,6 +91,7 @@ hr {
   margin-bottom: 10px;
   z-index: 10;
   transition: top 0.5s;
+  transition-timing-function: ease;
   }
 
 #navbar li {
@@ -628,6 +629,7 @@ footer p  {
 } */
 /* NAVIGATION */
 
+
 #navbar {
   display:none;
 }
@@ -658,19 +660,8 @@ footer p  {
     z-index: 800;
 }
 
-.burger-menu {
+#burger-menu {
     display: none;
-  }
-
-.burger-menu-piece {
-    width: 100%;
-    height:4px;
-    margin: 4px 0;
-    background: #0eedc7;
-    border-radius: 4px;
-  }
-
-  .burger-menu {
     background-color: #002c59;
     height: 100vh;
     width: 100vw;
@@ -679,7 +670,14 @@ footer p  {
     left: 0px;
     z-index: 700;
     padding: 20%;
+  }
 
+.burger-menu-piece {
+    width: 100%;
+    height:4px;
+    margin: 4px 0;
+    background: #0eedc7;
+    border-radius: 4px;
   }
 
   .site-nav li {
@@ -698,10 +696,6 @@ footer p  {
 
   }
 
-  body, html {
-    height: 100%;
-  }
-
 /* burger menu end */
 
 .landing-page {
@@ -710,7 +704,6 @@ footer p  {
   background-image: url('../images/bg-landing-mobile.png');
   min-height: 150px;
   }
-
 
 
  }

@@ -1,11 +1,25 @@
 // console.log(jQuery === $);
+$(document).ready(function() {
 
-function toggleNavigation() {
-  // $("selector").action("arguments");
+  $('#burger-menu-container').click(function() {
+           $('#burger-menu').toggle();
+      });
 
-  $(".burger-menu").slideToggle();
-  console.log("this is working");
-};
+
+// function scrollDisable() {
+//   if($('.burger-menu').html('display') == 'block'){
+//     $('body').addClass('fixedPosition');
+//   }  else if ($('.burger-menu').html('display') == 'none'){
+//     $('body').removeClass('fixedPosition');
+//   }
+// };
+
+// function Test1() {
+//   toggleNavigation();
+//   scrollDisable();
+// }
+
+console.log("after toggle");
 
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
@@ -20,14 +34,4 @@ function scrollFunction() {
   }
 };
 
-
-
-// window.onscroll = function() {scrollFunction2()};
-//
-// function scrollFunction2() {
-//   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 300) {
-//     document.getElementById("mobilenavbar").style.top = "0";
-//   } else {
-//     document.getElementById("mobilenavbar").style.top = "-70px";
-//   }
-// };
+});
