@@ -10,6 +10,9 @@ Pure White:
 Grey: #2d2d2d
 #626262
 #828282*/
+body{
+  transition: 0.66s ease-out;
+}
 
 p {
   font-family: "Roboto", sans-serif;
@@ -712,7 +715,7 @@ div.activatePieceOut, div.activatePieceOut2{
   min-height: 100vh;
   background-image: url('../images/bg-landing-mobile.png');
   position: relative;
-  background-attachment: fixed;
+  background-attachment:scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
