@@ -10,10 +10,6 @@ Pure White:
 Grey: #2d2d2d
 #626262
 #828282*/
-body {
-  position: relative;
-  max-width: 100vw;
-}
 
 p {
   font-family: "Roboto", sans-serif;
@@ -712,9 +708,8 @@ div.activatePieceOut, div.activatePieceOut2{
 /* burger menu ends */
 
 .landing-page {
-  height: 100vh;
   width: 100vw;
-  min-height: 150px;
+  min-height: 100vh;
   background-image: url('../images/bg-landing-mobile.png');
   position: relative;
   background-attachment: fixed;
