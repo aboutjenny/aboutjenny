@@ -620,6 +620,7 @@ footer p  {
 
 
 /* MOBILE DESIGN*/
+/* MOBILE DESIGN*/
 
   @media (min-width: 1px) and (max-width : 576px)  {
 
@@ -713,10 +714,11 @@ div.activatePieceOut, div.activatePieceOut2{
   }
 
 /* burger menu ends */
+/* burger menu ends */
 
 .landing-page {
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height:100%;
   background-image: url('../images/bg-landing-mobile.png');
   position: relative;
   background-attachment: scroll;
@@ -725,6 +727,49 @@ div.activatePieceOut, div.activatePieceOut2{
   background-size: cover;
   }
 
+.about-page{
+  min-height: 500px;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  padding: 1%;
+  padding-top: 6%;
+  overflow: auto;
+  }
+
+.content-about {
+  width: 90%;
+  height: auto;
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  }
+
+#pictureabout{
+  width: 100%;
+  height: 30%;
+  display: block;
+  padding: 5px;
+  }
+
+#pictureabout img{
+  height: 70%;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-height: 400px;
+}
+
+#textabout {
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 30px 5px 5px 5px;
+  position: relative
+}
 
  }
 
