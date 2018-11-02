@@ -2,7 +2,12 @@
 $(document).ready(function() {
 
   $('#burger-menu-container').click(function() {
-           $('#burger-menu').toggle();
+           $('#burger-menu').slideToggle();
+           $('#pieceOne').toggleClass('activatePieceOne');
+           $('#pieceTwo').toggleClass('activatePieceTwo');
+           console.log("todo bien");
+           $('#pieceOut').toggleClass('activatePieceOut');
+           $('#pieceOut2').toggleClass('activatePieceOut');
       });
 
 
