@@ -232,7 +232,6 @@ hr {
   position: absolute;
 }
 
-
 #textabout hr {
   position: relative;
   left: -40%;
@@ -271,7 +270,6 @@ hr {
   position: relative;
   left: -20%;
 }
-
 
 .serviceone, .servicetwo, .servicethree {
   max-width: 32.5%;
@@ -416,12 +414,12 @@ hr {
 }
 
 .DescriptionContainer h3 {
-    font-weight: 400;
-    color: #0eedc7;
+  font-weight: 400;
+  color: #0eedc7;
 }
 
 .DescriptionContainer p {
-    color: white;
+  color: white;
 }
 
 .PortContainer:hover .DescriptionContainer {
@@ -499,7 +497,6 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 9px;
 }
 
 
@@ -727,7 +724,7 @@ div.activatePieceOut, div.activatePieceOut2{
 
 /* ABOUT PAGE */
 
-.about-page, .services-page, .portfolio-page {
+.about-page, .services-page, .portfolio-page, .contact-page {
   min-height: 500px;
   height: 100%;
   width: 100vw;
@@ -798,8 +795,12 @@ height: 100%;
 padding: 20px 10px 20px 10px;
 }
 
-
 /* PORTOFLIO PAGE */
+
+.portfolio-page{
+  padding: 0;
+  padding-top: 6%;
+}
 
 .PortContainer {
   width: 100%;
@@ -818,7 +819,7 @@ padding: 20px 10px 20px 10px;
   transition: all 0.4s ease;
   top: 0;
   left: 0;
-  padding: 10%;
+  padding: 5%;
   }
 
 .DescriptionContainer hr {
@@ -834,7 +835,6 @@ padding: 20px 10px 20px 10px;
 .DescriptionContainer p {
     color: white;
 }
-
 
 #port1 {
   background-image: url('../images/portfolio/nuttylove1.png');
@@ -861,6 +861,113 @@ padding: 20px 10px 20px 10px;
 
 #port4, #port5, #port6 {
   display: none;
+}
+
+/* CONTACT PAGE */
+
+.contact-page{
+  padding: 0;
+  padding-top: 6%
+}
+
+.contactcontent {
+  height: 100%;
+  overflow: auto;
+  padding: 2%;
+}
+
+.contactcontent hr{
+  position: relative;
+  left: -30%;
+}
+
+.contactinfo {
+  width: 100%;
+  padding: 5%;
+  float: left;
+}
+
+.contactinfo p {
+  padding-top: 10px;
+}
+
+.contactform {
+  width: 100%;
+  padding: 2%;
+  float: left;
+}
+
+form {
+  padding: 5%;
+}
+
+input {
+  margin-bottom: 9px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #0eedc7;
+   -webkit-transition: 0.5s;
+  transition: all 0.5s;
+  outline: none;
+  font-size: 15px;
+  color:  #002c59;
+  padding-left: 10px;
+}
+
+input:focus {
+    border-bottom: 2px solid #002c59;
+}
+
+label {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #002c59;
+}
+
+.coment {
+  width: 100%;
+  height: 30px;
+  resize: none;
+  overflow: scroll;
+  border: none;
+  border-bottom: 2px solid #0eedc7;
+   -webkit-transition: 0.5s;
+  transition: all 0.5s ease;
+  outline: none;
+  font-size: 15px;
+  color:  #002c59;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+.coment:focus {
+    border-bottom: 2px solid #002c59;
+    height: 80px;
+}
+
+.SubmitButton {
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  border: 2px solid #0eedc7;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #002c59;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  background-color: white;
+}
+
+.SubmitButton:hover {
+  background-color: #0eedc7;
+  transition: all 0.4s ease;
 }
 
  }
