@@ -399,7 +399,6 @@ hr {
 }
 
 .DescriptionContainer{
-  background-color: white;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -424,7 +423,6 @@ hr {
 .DescriptionContainer p {
     color: white;
 }
-
 
 .PortContainer:hover .DescriptionContainer {
   opacity: 1;
@@ -729,7 +727,7 @@ div.activatePieceOut, div.activatePieceOut2{
 
 /* ABOUT PAGE */
 
-.about-page, .services-page{
+.about-page, .services-page, .portfolio-page {
   min-height: 500px;
   height: 100%;
   width: 100vw;
@@ -798,6 +796,71 @@ position: relative;
 width: 100%;
 height: 100%;
 padding: 20px 10px 20px 10px;
+}
+
+
+/* PORTOFLIO PAGE */
+
+.PortContainer {
+  width: 100%;
+  height: 300px;
+  float: left;
+  overflow: auto;
+  position: relative;
+}
+
+.DescriptionContainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(0,44,89,0);
+  transition: all 0.4s ease;
+  top: 0;
+  left: 0;
+  padding: 10%;
+  }
+
+.DescriptionContainer hr {
+  position: relative;
+  left: -25%;
+}
+
+.DescriptionContainer h3 {
+    font-weight: 400;
+    color: #0eedc7;
+}
+
+.DescriptionContainer p {
+    color: white;
+}
+
+
+#port1 {
+  background-image: url('../images/portfolio/nuttylove1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#port2 {
+  padding: 10px;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#port3 {
+  padding: 10px;
+  background-image: url('../images/portfolio/vhalar1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+#port4, #port5, #port6 {
+  display: none;
 }
 
  }
