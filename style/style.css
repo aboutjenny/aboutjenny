@@ -624,16 +624,10 @@ footer p  {
 
   @media (min-width: 1px) and (max-width : 576px)  {
 
-/* body {
-  width: 100vw;
-} */
 /* NAVIGATION */
-
-
 #navbar {
   display:none;
 }
-
 /* burger menu starts */
 
 .burger-menu-piece {
@@ -715,13 +709,18 @@ div.activatePieceOut, div.activatePieceOut2{
     text-transform: uppercase;
   }
 
-/* burger menu end */
+/* burger menu ends */
 
 .landing-page {
-  max-height: 100vh;
+  height: 100vh;
   width: 100vw;
-  background-image: url('../images/bg-landing-mobile.png');
   min-height: 150px;
+  background-image: url('../images/bg-landing-mobile.png');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
 
