@@ -918,6 +918,7 @@ footer p {
 
 
   #about-page, #services-page, #portfolio-page {
+    height: 100%;
     min-height: 700px;
   }
 
@@ -926,8 +927,7 @@ footer p {
     overflow: auto;
   }
 
-
-  .content-about {
+  .content-about #services-content {
     height: 95%;
   }
 
