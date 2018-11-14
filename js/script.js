@@ -63,6 +63,16 @@ $(document).ready(function() {
        $("#bodyWrapper, body").toggleClass('overFlowHidden');
     });
 
+  $('.site-nav').on("click", function(){
+      $('#burger-menu').fadeToggle('ease');
+      $('#pieceOne').toggleClass('activatePieceOne');
+      $('#pieceTwo').toggleClass('activatePieceTwo');
+      console.log("todo bien");
+      $('#pieceOut').toggleClass('activatePieceOut');
+      $('#pieceOut2').toggleClass('activatePieceOut');
+      $("#bodyWrapper, body").removeClass('overFlowHidden');
+    });
+
 
   window.onscroll = function() {scrollFunction()};
 

@@ -259,7 +259,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 /* second part */
-.about-page {
+#about-page {
   height: 85vh;
   width: 100vw;
   min-height: 550px;
@@ -312,7 +312,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 /* third part */
-.services-page {
+#services-page {
   height: 80vh;
   width: 100vw;
   min-height: 550px;
@@ -431,7 +431,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 /*service three end*/
 /* fourth part */
-.portfolio-page {
+#portfolio-page {
   width: auto;
   position: relative;
   left: 50%;
@@ -532,7 +532,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 /* fith part */
-.contact-page {
+#contact-page {
   height: 100%;
   width: 100vw;
   position: relative;
@@ -707,7 +707,7 @@ footer p {
     text-align: center;
   }
 
-  .about-page, .services-page, .portfolio-page, .contact-page {
+  #about-page, #services-page, #portfolio-page, #contact-page {
     min-height: 500px;
     height: 100%;
     width: 100vw;
@@ -779,7 +779,7 @@ footer p {
   }
 
   /* PORTOFLIO PAGE */
-  .portfolio-page {
+  #portfolio-page {
     padding: 0;
     padding-top: 6%;
   }
@@ -845,7 +845,7 @@ footer p {
   }
 
   /* CONTACT PAGE */
-  .contact-page {
+  #contact-page {
     padding: 0;
     padding-top: 6%
   }
@@ -916,12 +916,57 @@ footer p {
     background-size: cover;
   }
 
+  #about-page {
+    height: 90vh;
+  }
 
+  .content-about {
+    height: 95%;
+  }
+
+  #pictureabout {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%)
+  }
+
+  #pictureabout img {
+    height: 80%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 500px;
+  }
+
+  #textabout {
+    height: 50%;
+    width: 70%;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    padding: 60px 5px 5px 5px;
+  }
+
+  .PortContainer  {
+    height: 300px;
+  }
+
+  #about-page, #services-page, #portfolio-page {
+    height: 70vh;
+    min-height: 500px;
+
+  }
+
+  #contact-page {
+    height: 100%;
+    overflow: auto;
+  }
 
 }
 
-/* Small desktop */
-@media (min-width: 769px) and (max-width: 992px) {
+/* Small desktop or tablet side */
+@media (min-width: 768px) and (max-width: 992px) {
   #navbar {
     display: none;
   }
@@ -939,5 +984,7 @@ footer p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
 
 }
