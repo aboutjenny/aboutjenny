@@ -589,6 +589,7 @@ input {
   width: 100%;
   height: 30px;
   border: none;
+  border-radius: 0;
   border-bottom: 2px solid #0eedc7;
   -webkit-transition: 0.5s;
   transition: all 0.5s;
@@ -680,9 +681,16 @@ footer p {
     display: block;
   }
 
+.landing-page  {
+    height: 95vh;
+    background-image: url('../images/bg-landing-mobile.png');
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-
-  /* ABOUT PAGE */
   .about-page, .services-page, .portfolio-page, .contact-page {
     min-height: 500px;
     height: 100%;
@@ -692,6 +700,8 @@ footer p {
     padding-top: 6%;
     overflow: auto;
   }
+
+  /* ABOUT PAGE */
 
   .content-about {
     width: 90%;
@@ -879,7 +889,37 @@ footer p {
   #mobilenavbarwrap {
     display: block;
   }
+
+.landing-page{
+    height: 95vh;
+    background-image: url('../images/bg-landing-tablet.png');
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 }
 
 /* Small desktop */
-@media (min-width: 769px) and (max-width: 992px) {}
+@media (min-width: 769px) and (max-width: 992px) {
+  #navbar {
+    display: none;
+  }
+
+  #mobilenavbarwrap {
+    display: block;
+  }
+
+.landing-page{
+    height: 95vh;
+    background-image: url('../images/bg-landing-tablet.png');
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
