@@ -91,6 +91,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 .overFlowHidden {
   overflow: hidden;
+  height: 100%;
 }
 
 #mobilenavbar {

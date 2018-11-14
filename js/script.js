@@ -60,7 +60,7 @@ $(document).ready(function() {
        console.log("todo bien");
        $('#pieceOut').toggleClass('activatePieceOut');
        $('#pieceOut2').toggleClass('activatePieceOut');
-       $("#bodyWrapper").toggleClass('overFlowHidden');
+       $("#bodyWrapper, body").toggleClass('overFlowHidden');
     });
 
 
