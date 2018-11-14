@@ -51,8 +51,6 @@ if (iOSChromeDetected) {
   };
 }
 
-console.log("Test1")
-
 $(document).ready(function() {
 
   $('#burger-menu-container').click(function() {
@@ -76,5 +74,4 @@ $(document).ready(function() {
     }
   };
 
-console.log("Test2")
 });

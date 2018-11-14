@@ -117,10 +117,11 @@ div.activatePieceOut, div.activatePieceOut2 {
 #burger-menu {
   display: none;
   background-color: #002c59;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: fixed;
   z-index: 500;
+  overflow: hidden;
 }
 
 .site-nav {
