@@ -9,9 +9,7 @@ Pure White:
 Grey: #2d2d2d
 #626262
 #828282*/
-body {
-  transition: 0.66s ease-out;
-}
+
 
 p {
   font-family: "Roboto", sans-serif;
@@ -22,13 +20,14 @@ p {
 }
 
 h1 {
-  font-family: "Roboto Condensed", "helvetica", sans-serif;
+  font-family: "Roboto", "helvetica", sans-serif;
   font-weight: 700;
   letter-spacing: -2px;
 }
 
 h2 {
-  font-family: "Roboto Condensed", "helvetiva", sans-serif;
+  font-family: "Roboto", "helvetiva", sans-serif;
+  font-weight: 700;
 }
 
 h3 {
@@ -61,6 +60,7 @@ hr {
 
 /*NAV START  HERE*/
 /* BURGER MENU STARTS */
+
 #mobilenavbarwrap {
   display: none;
 }
@@ -87,6 +87,7 @@ div.activatePieceTwo {
 div.activatePieceOut, div.activatePieceOut2 {
   opacity: 0;
 }
+
 
 .overFlowHidden {
   overflow: hidden;
@@ -692,6 +693,19 @@ footer p {
     background-size: cover;
 }
 
+.logo-hero h1 {
+    color: #0eedc7;
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+.logo-hero h2 {
+    margin-top: -10px;
+    color: #0eedc7;
+    font-size: 3em;
+    text-align: center;
+  }
+
   .about-page, .services-page, .portfolio-page, .contact-page {
     min-height: 500px;
     height: 100%;
@@ -900,6 +914,8 @@ footer p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
 
 }
 
