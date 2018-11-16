@@ -9,6 +9,12 @@ Pure White:
 Grey: #2d2d2d
 #626262
 #828282*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -187,13 +193,10 @@ div.activatePieceOut, div.activatePieceOut2 {
 /*END OF NAV*/
 /* LANDING PAGE */
 
-
-
 .landing-page {
-  background-image: url('../images/bg-landing.png');
+  background-image: url('../images/bg-landing-desktop.png');
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
   min-height: 450px;
   position: relative;
   background-attachment: fixed;
@@ -203,14 +206,9 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 .hero-landing {
-  background: rgba(0, 0, 20, 0.4);
   padding: 1em 1em 0.5em 1em;
-  height: 95%;
-  width: 95%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
 }
 
 .logo-hero {
@@ -997,15 +995,10 @@ footer {
   }
 
 .landing-page{
-    height: 95vh;
+    height: calc(100vh - 80px);
     background-image: url('../images/bg-landing-tablet.png');
     position: relative;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
-
 
   #about-page, #services-page, #portfolio-page {
     height: 100%;
@@ -1017,27 +1010,24 @@ footer {
   }
 
   #pictureabout {
-    height: 50%;
-    position: absolute;
-    bottom: 0;
+    height: 40%;
+    position: relative;
     left: 50%;
     transform: translate(-50%, 0%)
   }
 
   #pictureabout img {
-    height: 80%;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 500px;
+    height: 100%;
+    left: 70%;
   }
 
   #textabout {
-    height: 50%;
+    height: 60%;
     width: 70%;
     transform: translate(-50%, 0%);
     left: 50%;
-    padding: 60px 5px 5px 5px;
+    padding: 5px;
+    position: relative;
   }
 
   .PortContainer  {
@@ -1047,7 +1037,7 @@ footer {
 }
 
 /* Small desktop or tablet side */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   #navbar {
     display: none;
   }
@@ -1057,15 +1047,18 @@ footer {
   }
 
 .landing-page{
-    height: 95vh;
+    height: calc(100vh - 80px);
     background-image: url('../images/bg-landing-tablet.png');
     position: relative;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
+}
 
+/* big desktop */
+@media (min-width: 1680) {
+
+  .landing-page{
+      background-image: url('../images/bg-landing-tablet.png');
+    }
 
 }
