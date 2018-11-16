@@ -769,7 +769,6 @@ footer {
 
   .landing-description {
     top: 75%;
-
   }
 
   #about-page, #services-page, #portfolio-page, #contact-page {
@@ -790,7 +789,8 @@ footer {
     position: relative;
     display: block;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
+    /* needs to be there for chrome */
   }
 
   #pictureabout {
@@ -822,6 +822,8 @@ footer {
     position: relative;
     display: block;
     left: 50%;
+    top: 0;
+    /* Needs to be like that for chrome */
     transform: translate(-50%, 0);
     overflow: auto;
   }
@@ -1000,10 +1002,12 @@ footer {
   #about-page, #services-page, #portfolio-page {
     height: 100%;
     min-height: 700px;
+    position: relative;
   }
 
   .content-about #services-content {
     height: 95%;
+    position: relative;
   }
 
   #pictureabout {
@@ -1015,7 +1019,7 @@ footer {
 
   #pictureabout img {
     height: 100%;
-    left: 70%;
+    left: 50%;
   }
 
   #textabout {
