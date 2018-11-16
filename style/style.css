@@ -824,9 +824,9 @@ footer {
     position: relative;
     display: block;
     /* Needs to be like that for chrome */
-    left: 50%;
     top: 0;
-    transform: translate(-50%, 0);
+    left: 50%;
+    transform: translate(-50%, 0%);
     overflow: auto;
   }
 
