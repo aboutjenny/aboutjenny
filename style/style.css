@@ -9,8 +9,6 @@ Pure White:
 Grey: #2d2d2d
 #626262
 #828282*/
-
-
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -35,6 +33,7 @@ h3 {
   font-size: 30px;
   color: #002c59;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 h4 {
@@ -53,7 +52,7 @@ hr {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 1em;
   border-color: #0eedc7;
 }
@@ -87,7 +86,6 @@ div.activatePieceTwo {
 div.activatePieceOut, div.activatePieceOut2 {
   opacity: 0;
 }
-
 
 .overFlowHidden {
   overflow: hidden;
@@ -188,6 +186,9 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 /*END OF NAV*/
 /* LANDING PAGE */
+
+
+
 .landing-page {
   background-image: url('../images/bg-landing.png');
   height: 100vh;
@@ -219,10 +220,18 @@ div.activatePieceOut, div.activatePieceOut2 {
   left: 50%;
 }
 
+@keyframes elementsEntry {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .logo-hero h1 {
   color: #0eedc7;
   font-size: 5em;
   text-align: center;
+  animation-name: elementsEntry;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 .logo-hero h2 {
@@ -230,6 +239,9 @@ div.activatePieceOut, div.activatePieceOut2 {
   color: #0eedc7;
   font-size: 5em;
   text-align: center;
+  animation-name: elementsEntry;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 }
 
 .landing-description {
@@ -237,25 +249,40 @@ div.activatePieceOut, div.activatePieceOut2 {
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-name: elementsEntry;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in;
 }
 
 .landing-description p {
   color: #0eedc7;
-  width: 250px;
-  line-height: 110%;
+  min-width: 250px;
+  line-height: 120%;
   text-align: center;
   margin-top: 35px;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+@keyframes jumping {
+  0%   {top: 30px;}
+  10% {top: 30px;}
+  50%  {top:35px}
+  100% {top: 30px;}
 }
 
 .landing-description img {
   max-width: 35px;
   position: relative;
   left: 50%;
-  margin-top: 10px;
+  top: 30px;
   transform: translate(-50%, -50%);
+  animation-name: jumping;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
 
 /* second part */
@@ -284,7 +311,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 #pictureabout img {
-  max-height: 70%;
+  height: 60%;
   position: relative;
   left: 50%;
   top: 50%;
@@ -538,10 +565,22 @@ div.activatePieceOut, div.activatePieceOut2 {
   position: relative;
 }
 
-.minihero {
+.minihero-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  min-height: 350px;
   background-color: #F5F8FB;
-  height: 300px;
+}
+
+
+.minihero {
   width: 100vw;
+  padding: 2% 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .minihero h3 {
@@ -550,10 +589,11 @@ div.activatePieceOut, div.activatePieceOut2 {
   color: #002c59;
   font-size: 30px;
   text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.minihero  p{
+  text-align: center;
+  padding-top: 30px;
 }
 
 .contactcontent {
@@ -657,18 +697,47 @@ label {
 }
 
 footer {
-  height: 50px;
+  height: 100%;
   background-color: #F5F8FB;
 }
 
-footer p {
+.social-media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.social-media  {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.social-media a{
+  text-decoration: none;
+}
+
+.social-media img {
+  height: 30px;
+  width: auto;
+  margin: 10px;
+}
+
+.footer-rights {
+  width: 100%;
+  position: relative;
+  padding: 5px;
+  transform: translate(-50%, -0%);
+  left: 50%;
+}
+
+ .footer-rights p {
   font-size: 9pt;
   text-align: center;
-  position: relative;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  padding: 10px;
 }
 
 /* MOBILE DESIGN*/
@@ -725,7 +794,7 @@ footer p {
     position: relative;
     display: block;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
   }
 
   #pictureabout {
@@ -759,7 +828,6 @@ footer p {
     position: relative;
     display: block;
     left: 50%;
-    top: 0%;
     transform: translate(-50%, 0);
     overflow: auto;
   }
@@ -845,6 +913,28 @@ footer p {
   }
 
   /* CONTACT PAGE */
+
+  .minihero-wrapper  {
+    padding: 15% 5%;
+    height: 100%;
+  }
+
+  .minihero {
+    padding: 5%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .minihero h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .minihero p {
+    padding-top: 20px;
+  }
+
   #contact-page {
     padding: 0;
     padding-top: 6%
@@ -889,7 +979,7 @@ footer p {
     transition: all 0.4s ease;
   }
 
-  footer p {
+   .footer-rights p{
     font-size: 9px;
   }
 }
@@ -920,11 +1010,6 @@ footer p {
   #about-page, #services-page, #portfolio-page {
     height: 100%;
     min-height: 700px;
-  }
-
-  #contact-page {
-    height: 100%;
-    overflow: auto;
   }
 
   .content-about #services-content {
@@ -958,8 +1043,6 @@ footer p {
   .PortContainer  {
     height: 300px;
   }
-
-
 
 }
 
