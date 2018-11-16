@@ -788,13 +788,14 @@ footer {
     height: 100%;
     position: relative;
     display: block;
+    top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     /* needs to be there for chrome */
   }
 
   #pictureabout {
-    width: 100%;
+    width: 30%;
     height: 30%;
     display: block;
     padding: 5px;
@@ -802,7 +803,7 @@ footer {
 
   #pictureabout img {
     height: 70%;
-    width: 70%;
+    width: auto;
     position: relative;
     transform: translate(-50%, 0%);
   }
@@ -824,7 +825,7 @@ footer {
     left: 50%;
     top: 0;
     /* Needs to be like that for chrome */
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50);
     overflow: auto;
   }
 
