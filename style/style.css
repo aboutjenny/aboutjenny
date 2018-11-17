@@ -571,7 +571,6 @@ div.activatePieceOut, div.activatePieceOut2 {
   background-color: #F5F8FB;
 }
 
-
 .minihero {
   width: 100vw;
   padding: 2% 10%;
@@ -943,6 +942,10 @@ footer {
     height: 100%;
     overflow: auto;
     padding: 2%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   .contactcontent hr {
