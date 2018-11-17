@@ -940,6 +940,7 @@ footer {
 
   .contactcontent {
     height: 100%;
+    max-height: 700px;
     overflow: auto;
     padding: 2%;
     position: relative;
