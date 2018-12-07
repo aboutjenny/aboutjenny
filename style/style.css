@@ -512,7 +512,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 #port1 {
-  background-image: url('../images/portfolio/nuttylove1.png');
+  background-image: url('../images/portfolio/coinscious-app.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -520,7 +520,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 #port2 {
   padding: 10px;
-  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png');
+  background-image: url('../images/portfolio/local.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -528,14 +528,14 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 #port3 {
   padding: 10px;
-  background-image: url('../images/portfolio/vhalar1.png');
+  background-image: url('../images/portfolio/coinscious-brand.png');
   background-size: cover;
   background-position: center;
 }
 
 #port4 {
   padding: 10px;
-  background-image: url('../images/portfolio/smartmag1.jpg');
+  background-image: url('../images/portfolio/smartmag.png');
   background-size: cover;
   background-position: 50%;
   background-position: center;
@@ -543,14 +543,14 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 #port5 {
   padding: 10px;
-  background-image: url('../images/portfolio/vhalar1.png');
+  background-image: url('../images/portfolio/vhalar.png');
   background-size: cover;
   background-position: center;
 }
 
 #port6 {
   padding: 10px;
-  background-image: url('../images/portfolio/nuttylove1.png');
+  background-image: url('../images/portfolio/nuttylove.png');
   background-size: cover;
   background-position: center;
 }
@@ -883,7 +883,7 @@ footer {
   }
 
   #port1 {
-    background-image: url('../images/portfolio/nuttylove1.png');
+    /* background-image: url('../images/portfolio/nuttylove1.png'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -891,7 +891,7 @@ footer {
 
   #port2 {
     padding: 10px;
-    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png');
+    /* background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -899,7 +899,7 @@ footer {
 
   #port3 {
     padding: 10px;
-    background-image: url('../images/portfolio/vhalar1.png');
+    /* background-image: url('../images/portfolio/vhalar1.png'); */
     background-size: cover;
     background-position: center;
   }

@@ -57,7 +57,6 @@ $(document).ready(function() {
        $('#burger-menu').fadeToggle("ease");
        $('#pieceOne').toggleClass('activatePieceOne');
        $('#pieceTwo').toggleClass('activatePieceTwo');
-       console.log("todo bien");
        $('#pieceOut').toggleClass('activatePieceOut');
        $('#pieceOut2').toggleClass('activatePieceOut');
        $("#bodyWrapper, body").toggleClass('overFlowHidden');
@@ -67,7 +66,6 @@ $(document).ready(function() {
       $('#burger-menu').fadeToggle('ease');
       $('#pieceOne').toggleClass('activatePieceOne');
       $('#pieceTwo').toggleClass('activatePieceTwo');
-      console.log("todo bien");
       $('#pieceOut').toggleClass('activatePieceOut');
       $('#pieceOut2').toggleClass('activatePieceOut');
       $("#bodyWrapper, body").removeClass('overFlowHidden');
