@@ -11,9 +11,8 @@ Grey: #2d2d2d
 #828282*/
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
-
 
 p {
   font-family: "Roboto", sans-serif;
