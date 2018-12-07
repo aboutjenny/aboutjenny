@@ -424,7 +424,6 @@ div.activatePieceOut, div.activatePieceOut2 {
   padding-top: 20px;
   text-align: center;
 }
-
 /*service two end*/
 /*service three start*/
 #servicethreepic {
@@ -486,25 +485,28 @@ div.activatePieceOut, div.activatePieceOut2 {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: rgba(0, 44, 89, 0.8);
+  background-color: rgba(255, 255, 255, 0.96);
   transition: all 0.4s ease;
   top: 0;
   left: 0;
-  padding: 10%;
+  padding: 5%;
 }
 
 .DescriptionContainer hr {
   position: relative;
-  left: -25%;
+  left: -47%;
+  top: -9px
 }
 
-.DescriptionContainer h3 {
-  font-weight: 400;
-  color: #0eedc7;
+.DescriptionContainer h4, .DescriptionContainer h3 {
+  font-size: 30px;
+  color: #002c59;
 }
 
 .DescriptionContainer p {
-  color: white;
+  color: #002c59;
+  position: relative;
+  left: 10px;
 }
 
 .PortContainer:hover .DescriptionContainer {
@@ -857,7 +859,8 @@ footer {
   }
 
   .DescriptionContainer {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -865,9 +868,9 @@ footer {
     transition: all 0.4s ease;
     top: 0;
     left: 0;
-    padding: 5%;
+    padding: 5%; */
   }
-
+/*
   .DescriptionContainer hr {
     position: relative;
     left: -25%;
@@ -880,29 +883,29 @@ footer {
 
   .DescriptionContainer p {
     color: white;
-  }
+  } */
 
-  #port1 {
+  /* #port1 {
     /* background-image: url('../images/portfolio/nuttylove1.png'); */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     position: relative;
-  }
-
+  } */
+/*
   #port2 {
-    padding: 10px;
+    padding: 10px; */
     /* background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/00841e63199563.5aa906aacbf2d.png'); */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     position: relative;
-  }
+  } */
 
-  #port3 {
-    padding: 10px;
+  /* #port3 {
+    padding: 10px; */
     /* background-image: url('../images/portfolio/vhalar1.png'); */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-  }
+  } */
 
   #port4, #port5, #port6 {
     display: none;
@@ -911,30 +914,33 @@ footer {
   /* CONTACT PAGE */
 
   .minihero-wrapper  {
-    padding: 15% 5%;
-    height: 300px;
+    padding: 0;
+    min-height: 400px;
+    height: 100%;
+    overflow: auto;
   }
 
   .minihero {
-    padding: 5%;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    height: auto;
+    padding: 0 3%;
+    position: absolute;
+    transform: translate(-50%, -50%);
   }
 
   .minihero h3 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
+    font-weight: 400;
   }
 
   .minihero p {
     padding-top: 20px;
+    font-size: 18px;
   }
 
   #contact-page {
     padding: 0;
-    padding-top: 6%
+
   }
 
   .contactcontent {
