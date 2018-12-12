@@ -12,7 +12,7 @@ Grey: #2d2d2d
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   color: #002c59
 }
@@ -256,6 +256,7 @@ div.activatePieceOut, div.activatePieceOut2 {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
+  font-size: 22px;
 }
 
 @keyframes jumping {
@@ -331,112 +332,84 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 /* third part */
+
 #services-page {
   height: 80vh;
   width: 100vw;
-  min-height: 550px;
+  min-height: 100%;
   position: relative;
+  padding-bottom: 80px;
 }
 
 #services-content {
-  height: 90%;
+  height: 100%;
   width: 90%;
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-#servicetittle {
-  width: 300px;
-  height: 150px;
-  padding: 30px 10px 10px 80px;
+#service-title-container {
+  width: 100%;
+  max-width: 374px;
+  padding: 30px 0px 80px 0px;
+  position: relative;
 }
 
-#servicetittle hr {
+#service-title {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#service-title hr {
   position: relative;
   left: -20%;
 }
 
-.serviceone, .servicetwo, .servicethree {
-  max-width: 32.5%;
+.services-container {
+  max-width: 33.3%;
   padding: 0 2%;
   float: left;
-  height: 400px;
+  min-height: 400px;
 }
 
-/*service one start*/
-#serviceonepic {
+.services-icon {
   position: relative;
-  width: 190px;
-  height: 210px;
+  width: 50%;
+  max-height: 250px;
+  min-width: 120px;
+  height: auto;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
-#serviceonepic img {
-  width: 90%;
-  position: absolute;
+.services-subtitle-container {
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -0%);
+  transform: translate(-50%, 0%);
+  padding-top: 10px;
+  height: 90px;
+  text-align: center;
 }
 
-.services-subtitle {
+.services-subtitle-container h3 {
   position: absolute;
-  top: 65%;
-  line-height: 1.2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
 }
 
-.serviceone p {
+.services-container p {
   padding-top: 20px;
   text-align: center;
 }
 
 /*service one end*/
-/*service two start*/
-#servicetwopic {
-  position: relative;
-  width: 190px;
-  height: 210px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
 
-#servicetwopic img {
-  width: 90%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -0%);
-}
-
-
-.servicetwo p {
-  padding-top: 20px;
-  text-align: center;
-}
-/*service two end*/
-/*service three start*/
-#servicethreepic {
-  position: relative;
-  width: 190px;
-  height: 210px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-
-#servicethreepic img {
-  width: 90%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -0%);
-}
-
-.servicethree p {
-  padding-top: 20px;
-  text-align: center;
-}
-
-/*service three end*/
 /* fourth part */
 #portfolio-page {
   width: auto;
@@ -449,12 +422,25 @@ div.activatePieceOut, div.activatePieceOut2 {
   overflow: auto;
 }
 
-#portfoliotittle {
-  max-width: 100px;
-  margin: 10px 10px 50px 10px;
+#portfolio-title-container {
+  width: 100%;
+  max-width: 374px;
+  padding: 30px 0px 80px 0px;
   position: relative;
-  left: 18%;
 }
+
+#portfolio-title {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#portfolio-title hr {
+  position: relative;
+  left: -20%;
+}
+
 
 .PortContainer {
   width: 33.3%;
@@ -591,29 +577,40 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 .contactinfo {
   width: 35%;
-  padding: 30px;
+  padding: 30px 0px 90px 0px;
   float: left;
+}
+
+.contactinfo h4 {
+  padding-top: 30px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  line-height: 1.3;
 }
 
 .contactinfo p {
   padding-top: 10px;
 }
 
-.contactform {
-  width: 60%;
-  padding: 30px;
-  padding-top: 100px;
-  float: left;
-  height: 100%;
-}
-
-.contactform a {
+.contactcontent a {
   color: #0eedc7;
 }
 
 footer {
   height: 100%;
   background-color: #F5F8FB;
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer h4{
+  padding: 1%;
+}
+footer a{
+  text-align: center;
+  color:  #002c59;
+  font-weight: 200;
+  text-decoration: none;
 }
 
 .social-media-wrapper {
@@ -680,12 +677,21 @@ footer {
   }
 
 .logo-hero h2 {
-    margin-top: -10px;
-    font-size: 3em;
+    margin-top: -5px;
+    font-size: 3.5em;
   }
 
   .landing-description {
     top: 75%;
+  }
+
+  .landing-description hr {
+    position: relative;
+    top: -10px;
+  }
+
+  .landing-description p {
+    font-size: 18px;
   }
 
   #about-page, #services-page, #portfolio-page, #contact-page {
@@ -747,18 +753,18 @@ footer {
     overflow: auto;
   }
 
-  .serviceone, .servicetwo, .servicethree {
+  .services-container {
     max-width: 100%;
-    padding: 2% 2%;
+    padding: 2%;
     float: left;
     height: 30%;
+    padding-bottom: 40px;
   }
 
-  #servicetittle {
+  .services-subtitle-container {
     position: relative;
+    height: 70px;
     width: 100%;
-    height: 100%;
-    padding: 20px 10px 20px 10px;
   }
 
   /* PORTOFLIO PAGE */
@@ -787,14 +793,14 @@ footer {
 
   .minihero-wrapper  {
     padding: 0;
-    min-height: 400px;
+    min-height: 300px;
     height: 100%;
     overflow: auto;
   }
 
   .minihero {
     height: auto;
-    padding: 0 3%;
+    padding: 2%
     position: absolute;
     transform: translate(-50%, -50%);
   }
@@ -802,7 +808,7 @@ footer {
   .minihero h3 {
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
   }
 
   .minihero p {
@@ -832,7 +838,7 @@ footer {
 
   .contactinfo {
     width: 100%;
-    padding: 5%;
+    padding: 30px 5% 90px 5%;
     float: left;
   }
 
@@ -876,10 +882,12 @@ footer {
     background-attachment: scroll;
   }
 
+  .landing-description p {
+    font-size: 18px;
+  }
+
   #about-page, #services-page, #portfolio-page {
-    height: 100%;
-    min-height: 700px;
-    position: relative;
+    min-height: 600px;
   }
 
   .content-about #services-content {

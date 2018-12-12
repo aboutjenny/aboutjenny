@@ -2,8 +2,17 @@
 <html>
 
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130796319-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130796319-1');
+</script>
+
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>about Jenny</title>
   <link rel="stylesheet" type="text/css" href="style/reset.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -58,8 +67,8 @@
   <main class="landing-page vh-fix">
     <section class="hero-landing">
       <div class="logo-hero">
-        <h1> ABOUT</h1>
-        <h2> JENNY<h2>
+        <h1>About</h1>
+        <h2>Jenny<h2>
       </div>
       <div class="landing-description">
         <hr>
@@ -69,7 +78,6 @@
 
     </section>
   </main>
-
 
   <!-- second page -->
   <section id="about-page" class="vh-fix">
@@ -93,30 +101,38 @@
   <!-- third page -->
   <section id="services-page"  class="vh-fix">
     <div id="services-content">
-      <div id="servicetittle">
-        <h3>Services</h3>
-        <hr />
+      <div id="service-title-container">
+          <div id="service-title">
+            <h3>Services</h3>
+            <hr />
+          </div>
       </div>
 
-      <div class="serviceone">
-        <div id="serviceonepic">
+      <div id="service-one"  class="services-container">
+        <div class="services-icon">
           <img src="images/service-branding.png" alt="arrow1">
+        </div>
+        <div class="services-subtitle-container">
           <h3 class="services-subtitle">Branding</h3>
         </div>
         <p>Develop a powerful brand that connects with your audience. Your brand is more than a logo, it’s also the way it speaks and behaves. I’ll help you identify your target and how to communicate to it. </p>
       </div>
 
-      <div class="servicetwo">
-        <div id="servicetwopic">
+      <div id="service-two" class="services-container">
+        <div class="services-icon">
           <img src="images/service-wordpress.png" alt="arrow1">
+        </div>
+        <div class="services-subtitle-container">
           <h3 class="services-subtitle">Web Design</h3>
         </div>
         <p>Build a responsive website that helps your brand to connect with your audience increasing the brand awareness and a good clients conversion.</p>
       </div>
 
-      <div class="servicethree">
-        <div id="servicethreepic">
+      <div id="service-three" class="services-container">
+        <div class="services-icon">
           <img src="images/service-webdesign.png" alt="arrow1">
+        </div>
+        <div class="services-subtitle-container">
           <h3 class="services-subtitle">User Interface</h3>
         </div>
         <p>Creating interactive prototypes which allow us to find the best mobile solutions and develop an user friendly app with a neat interface.</p>
@@ -128,78 +144,81 @@
   <!-- fourth page -->
   <section id="portfolio-page" class="vh-fix">
 
-    <div id="portfoliotittle">
-      <h3>Portfolio</h3>
-      <hr>
+    <div id="portfolio-title-container">
+      <div id="portfolio-title">
+          <h3>Portfolio</h3>
+          <hr>
+      </div>
     </div>
 
     <div class="gallery">
-      <a href="https://www.behance.net/gallery/73151481/Cryptocurrency-App-User-Experience-Design" target="_blank">
-      <div class="PortContainer" id="port1">
-        <div class="DescriptionContainer">
-          <h3>Coinscious Mobile App</h3>
-          <hr/>
-          <p>User Experience</p>
-          <p>User Interface</p>
-        </div>
-      </div>
-      </a>
 
-      <a href="https://www.behance.net/gallery/63199563/Mundo-Guia-UI-design-for-restaurants-app" target="_blank">
-      <div class="PortContainer" id="port2">
-
+        <a href="https://www.behance.net/gallery/73151481/Cryptocurrency-App-User-Experience-Design" target="_blank">
+        <div class="PortContainer" id="port1">
           <div class="DescriptionContainer">
-            <h3>Local App</h3>
+            <h3>Coinscious Mobile App</h3>
             <hr/>
+            <p>User Experience</p>
             <p>User Interface</p>
           </div>
-      </div>
-      </a>
+        </div>
+        </a>
 
-      <a href="https://www.behance.net/gallery/72812825/Coinscious-Branding-Coins-Market-Business" target="_blank">
-      <div class="PortContainer" id="port3">
-          <div class="DescriptionContainer">
-            <h3>Coinscious Branding</h3>
-            <hr />
-            <p>Branding</p>
-            <p>Web Design</p>
-            <p>Editorial Design</p>
-          </div>
-      </div>
-      </a>
+        <a href="https://www.behance.net/gallery/63199563/Mundo-Guia-UI-design-for-restaurants-app" target="_blank">
+        <div class="PortContainer" id="port2">
 
-      <a href="https://www.behance.net/gallery/62088499/SmartMag" target="_blank">
-      <div class="PortContainer" id="port4">
-          <div class="DescriptionContainer">
-            <h3>SmartMAG</h3>
-            <hr/>
-            <p>Branding</p>
-            <p>Editorial Design</p>
-            <p>Art Direction</p>
-          </div>
-      </div>
-      </a>
+            <div class="DescriptionContainer">
+              <h3>Local App</h3>
+              <hr/>
+              <p>User Interface</p>
+            </div>
+        </div>
+        </a>
 
-      <a href="https://www.behance.net/gallery/62613635/Vhalar-Craft-Beer" target="_blank">
-      <div class="PortContainer" id="port5">
+        <a href="https://www.behance.net/gallery/72812825/Coinscious-Branding-Coins-Market-Business" target="_blank">
+        <div class="PortContainer" id="port3">
+            <div class="DescriptionContainer">
+              <h3>Coinscious Branding</h3>
+              <hr />
+              <p>Branding</p>
+              <p>Web Design</p>
+              <p>Editorial Design</p>
+            </div>
+        </div>
+        </a>
 
-          <div class="DescriptionContainer">
-            <h3>Vhalar</h3>
-            <hr/>
-            <p>Branding</p>
-          </div>
-      </div>
-      </a>
+        <a href="https://www.behance.net/gallery/62088499/SmartMag" target="_blank">
+        <div class="PortContainer" id="port4">
+            <div class="DescriptionContainer">
+              <h3>SmartMAG</h3>
+              <hr/>
+              <p>Branding</p>
+              <p>Editorial Design</p>
+              <p>Art Direction</p>
+            </div>
+        </div>
+        </a>
 
-      <a href="https://www.behance.net/gallery/53637949/Nutty-Love-Branding" target="_blank">
-      <div class="PortContainer" id="port6">
-          <div class="DescriptionContainer">
-            <h3>Nutty Love</h3>
-            <hr />
-            <p>Branding</p>
-          </div>
-      </div>
-      </a>
+        <a href="https://www.behance.net/gallery/62613635/Vhalar-Craft-Beer" target="_blank">
+        <div class="PortContainer" id="port5">
+
+            <div class="DescriptionContainer">
+              <h3>Vhalar</h3>
+              <hr/>
+              <p>Branding</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/53637949/Nutty-Love-Branding" target="_blank">
+        <div class="PortContainer" id="port6">
+            <div class="DescriptionContainer">
+              <h3>Nutty Love</h3>
+              <hr />
+              <p>Branding</p>
+            </div>
+        </div>
+        </a>
 
     </div>
   </section>
@@ -209,43 +228,46 @@
     <div class="minihero-wrapper">
       <div class="minihero">
         <h3>If you’re reading this, it's because you believe you need some help with your business. </h3>
-        <p>Drop me a line and let’s work on it!</p>
       </div>
     </div>
     <div class="contactcontent">
       <div class="contactinfo">
-        <h3>Let's chat!</h3>
+        <h3>Drop me a line!</h3>
         <hr>
-        <p>I want to hear about your next great idea, or maybe you have a suggestion, or you just want to share a nice playlist, let me know using this form.</p>
+        <h4>
+          Send me an e-mail to <a href="mailto:hello@aboutjenny.com">hello@aboutjenny</a>
+        </h4>
+        <p>I want to hear about your next great idea, or maybe you have a suggestion, or you just want to share a nice playlist</p>
         <p>I’m currently based in London but it makes me happy to work with people from all over the world.</p>
       </div>
-
-      <div class="contactform">
-        <h4>
-          Drop me an email to <a href="mailto:hello@aboutjenny.com">hello@aboutjenny</a>
-        </h4>
-
-
-      </div>
-
+      <!-- <div class="contactform">
+      </div> -->
     </div>
 
   </section>
 
   <footer>
+    <div>
+      <h4>
+       <a href="mailto:hello@aboutjenny.com">hello@aboutjenny</a>
+      <h4>
+    </div>
     <div class="social-media-wrapper">
       <div class="social-media">
-        <a href="https://www.behance.net/JennyDeJesus">
-          <img src="images/social-media/behance.png" alt="Behance">
-        </a>
-        <a href="https://www.linkedin.com/in/jenny-de-jes%C3%BAs-58210190/">
-          <img src="images/social-media/linkedin.png" alt="Linkedin">
-        </a>
+          <a href="https://www.behance.net/JennyDeJesus"  target="_blank">
+            <img src="images/social-media/behance.png" alt="Behance">
+          </a>
+          <a href="https://www.linkedin.com/in/jenny-de-jes%C3%BAs-58210190/" target="_blank">
+            <img src="images/social-media/linkedin.png" alt="Linkedin">
+          </a>
+          <a href="https://dribbble.com/aboutjenny" target="_blank">
+            <img src="images/social-media/dribbble.png" alt="Dribbble">
+          </a>
       </div>
     </div>
 
     <div class="footer-rights">
-        <p> &#174; 2018 - www.aboutjenny.com - v1.95 |  Designed and Developed by: Jenny De Jesus - All rights reserved</p>
+        <p> &#174; 2018 - www.aboutjenny.com - v1.96 |  Designed and Developed by: Jenny De Jesus - All rights reserved</p>
     </div>
   </footer>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
