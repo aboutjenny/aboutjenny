@@ -8,7 +8,6 @@ Pure White:
 Grey: #2d2d2d
 #626262
 #828282*/
-
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -407,9 +406,7 @@ div.activatePieceOut, div.activatePieceOut2 {
   padding-top: 20px;
   text-align: center;
 }
-
-/*service one end*/
-
+/*service end*/
 /* fourth part */
 #portfolio-page {
   width: auto;
@@ -441,10 +438,9 @@ div.activatePieceOut, div.activatePieceOut2 {
   left: -20%;
 }
 
-
 .PortContainer {
   width: 33.3%;
-  height: 250px;
+  height: 260px;
   float: left;
   overflow: auto;
   position: relative;
@@ -459,24 +455,68 @@ div.activatePieceOut, div.activatePieceOut2 {
   transition: all 0.4s ease;
   top: 0;
   left: 0;
-  padding: 5%;
+  padding: 7%;
+  text-align: center;
 }
 
-.DescriptionContainer hr {
-  position: relative;
-  left: -47%;
-  top: -9px
-}
-
-.DescriptionContainer h4, .DescriptionContainer h3 {
-  font-size: 30px;
-  color: #002c59;
+.DescriptionContainer h3 {
+  line-height: 1.2;
+  font-size: 28px;
+  padding-bottom: 10px;
 }
 
 .DescriptionContainer p {
   color: #002c59;
-  position: relative;
-  left: 10px;
+}
+
+.description-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.watch-behance-container {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.watch-behance-button{
+  width: 230px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid  #002c59;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  color: #002c59;
+  transition: all 0.4s ease;
+}
+
+.watch-behance-container:hover .watch-behance-button {
+  color: #0eedc7;
+  border-color: #0eedc7;
+}
+
+.watch-behance-container:hover .arrow-right {
+  border-color: #0eedc7;
+  left: 13px;
+}
+
+
+
+.watch-behance-button  img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .PortContainer:hover .DescriptionContainer {
@@ -491,7 +531,6 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 #port2 {
-  padding: 10px;
   background-image: url('../images/portfolio/local.png');
   background-size: cover;
   background-position: center;
@@ -499,14 +538,12 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 #port3 {
-  padding: 10px;
   background-image: url('../images/portfolio/coinscious-brand.png');
   background-size: cover;
   background-position: center;
 }
 
 #port4 {
-  padding: 10px;
   background-image: url('../images/portfolio/smartmag.png');
   background-size: cover;
   background-position: 50%;
@@ -514,14 +551,12 @@ div.activatePieceOut, div.activatePieceOut2 {
 }
 
 #port5 {
-  padding: 10px;
   background-image: url('../images/portfolio/vhalar.png');
   background-size: cover;
   background-position: center;
 }
 
 #port6 {
-  padding: 10px;
   background-image: url('../images/portfolio/nuttylove.png');
   background-size: cover;
   background-position: center;
@@ -557,12 +592,69 @@ div.activatePieceOut, div.activatePieceOut2 {
   color: #002c59;
   font-size: 30px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.minihero  p{
-  text-align: center;
-  padding-top: 30px;
+#send-email-container{
+  width: 100%;
+  height: 40px;
+  position: relative;
 }
+
+#email-me-button {
+  width: 270px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid  #002c59;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+  color: #002c59;
+  transition: all 0.4s ease;
+}
+
+.arrow-right {
+  border: solid  #002c59;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 6px;
+  width: 10px;
+  height: 10px;
+  left: 10px;
+  position: relative;
+  left: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: all 0.4s ease;
+}
+
+#send-email-container:hover #email-me-button {
+  color: #0eedc7;
+  border-color: #0eedc7;
+}
+
+#send-email-container:hover .arrow-right {
+  border-color: #0eedc7;
+  left: 13px;
+}
+
+/* #send-email-container  img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+   max-height: 100%;
+
+}
+
+#send-email-container:hover img {
+  background-color: black;
+} */
+
 
 .contactcontent {
   width: 100vw;
@@ -886,13 +978,20 @@ footer a{
     font-size: 18px;
   }
 
-  #about-page, #services-page, #portfolio-page {
-    min-height: 600px;
+  #about-page {
+    min-height: 760px;
   }
 
-  .content-about #services-content {
-    height: 95%;
+  #services-page {
+    min-height: 600px;
+    height: 100%;
+    padding-bottom: 40px;
     position: relative;
+  }
+
+  .content-about, #services-content {
+    height: 100%;
+    position: absolute;
   }
 
   #pictureabout {
@@ -917,8 +1016,26 @@ footer a{
   }
 
   .PortContainer  {
-    height: 300px;
+    height: 250px;
   }
+
+  #portfolio-page {
+     min-height: 660px;
+   }
+
+   .DescriptionContainer h3{
+     font-size: 24px;
+   }
+   .watch-behance-button{
+     width: 200px;
+     height: 35px;
+     font-size: 12px;
+     font-weight: 200;
+   }
+
+   .watch-behance-button i{
+     padding: 5px;
+   }
 
 }
 
@@ -945,7 +1062,7 @@ footer a{
 @media (min-width: 1680) {
 
   .landing-page{
-      background-image: url('../images/bg-landing-tablet.png');
+      background-image: url('../images/bg-landing-hd.png');
     }
 
 }
