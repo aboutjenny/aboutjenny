@@ -172,11 +172,11 @@ div.activatePieceOut, div.activatePieceOut2 {
 #navbar a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
   font-size: 17px;
   line-height: 1.5;
   color: #0eedc7;
   font-weight: 400;
+  transition: all 0.4s ease;
 }
 
 #navbar a:hover {
@@ -588,7 +588,7 @@ div.activatePieceOut, div.activatePieceOut2 {
 
 .minihero h3 {
   font-family: "Roboto", "Helvetica", sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   color: #002c59;
   font-size: 30px;
   text-align: center;
@@ -613,7 +613,7 @@ div.activatePieceOut, div.activatePieceOut2 {
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   color: #002c59;
   transition: all 0.4s ease;
 }
@@ -642,19 +642,6 @@ div.activatePieceOut, div.activatePieceOut2 {
   border-color: #0eedc7;
   left: 13px;
 }
-
-/* #send-email-container  img {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-   max-height: 100%;
-
-}
-
-#send-email-container:hover img {
-  background-color: black;
-} */
-
 
 .contactcontent {
   width: 100vw;
@@ -696,8 +683,9 @@ footer {
 }
 
 footer h4{
-  padding: 1%;
+  padding: 0.5%;
 }
+
 footer a{
   text-align: center;
   color:  #002c59;
@@ -797,7 +785,6 @@ footer a{
   }
 
   /* ABOUT PAGE */
-
   .content-about {
     width: 90%;
     height: auto;
@@ -873,12 +860,40 @@ footer a{
     position: relative;
   }
 
-  .DescriptionContainer {
+  .description-text {
     display: none;
+}
+
+.PortContainer {
+  background-color: rgba(0, 44, 98, 0.1);
+  background-blend-mode: multiply;
+}
+
+  .DescriptionContainer {
+    opacity: 1;
+    background-color: rgba(0, 44, 98, 0.1);
+
 }
 
   #port4, #port5, #port6 {
     display: none;
+  }
+
+  .watch-behance-button {
+    border: 0px;
+    background-color: #002c59;
+    color: #0eedc7;
+    width: 200px;
+    height: 38px;
+  }
+
+  .watch-behance-button {
+    font-size: 12px;
+  }
+
+  #email-me-button, .arrow-right {
+    color: #0eedc7;
+    border-color: #0eedc7;
   }
 
   /* CONTACT PAGE */
@@ -908,6 +923,8 @@ footer a{
     font-size: 18px;
   }
 
+
+}
   #contact-page {
     padding: 0;
   }
