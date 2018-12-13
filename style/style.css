@@ -733,7 +733,6 @@ footer a{
 }
 
 /* MOBILE DESIGN*/
-/* MOBILE DESIGN*/
 @media (min-width: 1px) and (max-width : 576px) {
 
   /* NAVIGATION */
@@ -855,30 +854,24 @@ footer a{
   .PortContainer {
     width: 100%;
     height: 300px;
-    float: left;
-    overflow: auto;
-    position: relative;
   }
-
-  .description-text {
-    display: none;
-}
-
-.PortContainer {
-  background-color: rgba(0, 44, 98, 0.1);
-  background-blend-mode: multiply;
-}
-
-  .DescriptionContainer {
-    opacity: 1;
-    background-color: rgba(0, 44, 98, 0.1);
-
-}
 
   #port4, #port5, #port6 {
     display: none;
   }
 
+  .description-text {
+    display: none;
+  }
+
+  .DescriptionContainer {
+    opacity: 1;
+    background-color: rgba(0, 44, 98, 0.1);
+  }
+
+  .watch-behance-container {
+    top: 85%;
+  }
   .watch-behance-button {
     border: 0px;
     background-color: #002c59;
@@ -886,7 +879,6 @@ footer a{
     width: 200px;
     height: 38px;
   }
-
   .watch-behance-button {
     font-size: 12px;
   }
@@ -923,8 +915,6 @@ footer a{
     font-size: 18px;
   }
 
-
-}
   #contact-page {
     padding: 0;
   }
@@ -1040,18 +1030,30 @@ footer a{
      min-height: 660px;
    }
 
-   .DescriptionContainer h3{
-     font-size: 24px;
-   }
-   .watch-behance-button{
-     width: 200px;
-     height: 35px;
-     font-size: 12px;
-     font-weight: 200;
+   .description-text {
+     display: none;
    }
 
-   .watch-behance-button i{
-     padding: 5px;
+   .DescriptionContainer {
+     opacity: 1;
+     background-color: rgba(0, 44, 98, 0.1);
+   }
+
+   .watch-behance-container {
+     top: 85%;
+     left: 60%;
+   }
+
+   .watch-behance-button {
+     border: 0px;
+     color: rgba(0, 0, 0, 0);
+     width: 180px;
+     height: 34px;
+   }
+
+   #email-me-button, .arrow-right {
+     color: #0eedc7;
+     border-color: #0eedc7;
    }
 
 }
