@@ -887,6 +887,13 @@ footer a{
     color: #0eedc7;
     border-color: #0eedc7;
   }
+  
+   #email-me-button {
+     width: 200px;
+     height: 38px;
+     font-size: 12px;
+   }
+
 
   /* CONTACT PAGE */
 
